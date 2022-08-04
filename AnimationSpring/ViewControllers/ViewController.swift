@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        animationView.animate()
         descriptionLabel.text = animation.description
     }
     
