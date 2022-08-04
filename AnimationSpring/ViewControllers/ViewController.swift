@@ -15,9 +15,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //animationView.layer.cornerRadius = 10
-       
+        
+        descriptionLabel.text = animation.description
     }
+    
     private var animation = Animation.getAnimation()
     
     @IBAction func startAnimationButton(_ sender: UIButton) {
