@@ -13,13 +13,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var animationView: SpringView!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    private var animation = Animation.getAnimation()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         descriptionLabel.text = animation.description
     }
-    
-    private var animation = Animation.getAnimation()
     
     @IBAction func startAnimationButton(_ sender: UIButton) {
         descriptionLabel.text = animation.description
